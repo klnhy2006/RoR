@@ -1,0 +1,11 @@
+  <p>
+    <strong>Title:</strong>
+    <%= posting.title %>
+  </p>
+  <%= link_to 'Read More', [posting.user, posting] %>
+  
+  <p>
+  <%= link_to 'Delete Post', [posting.user, posting],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+  </p>
